@@ -14,13 +14,21 @@
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
         <activity
-            android:name="com.example.nuitinfogroupe2asobo.MainActivity"
+            android:name="com.example.nuitinfogroupe2asobo.MenuAccueil"
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.nuitinfogroupe2asobo.ChoixActivity"
+            android:label="@string/title_activity_choix" >
+        </activity>
+        <activity
+            android:name="com.example.nuitinfogroupe2asobo.RegionActivity"
+            android:label="@string/title_activity_region" >
         </activity>
     </application>
 
