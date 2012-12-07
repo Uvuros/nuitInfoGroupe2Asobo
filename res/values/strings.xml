@@ -6,5 +6,7 @@
     <string name="menu_settings">Settings</string>
     <string name="title_activity_choix">ChoixActivity</string>
     <string name="title_activity_region">RegionActivity</string>
+    <string name="title_activity_ingredients_ativity">IngredientsAtivity</string>
+    <string name="title_activity_web_view">WebViewActivity</string>
 
 </resources>
