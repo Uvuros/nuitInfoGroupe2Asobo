@@ -5,6 +5,7 @@ import android.app.Activity;
 import android.content.Intent;
 import android.view.Menu;
 import android.view.View;
+import android.widget.Toast;
 
 public class MenuAccueil extends Activity {
 
@@ -33,22 +34,27 @@ public class MenuAccueil extends Activity {
 	public void choixPlats(View view)
 	{
 		Intent intent = new Intent(this, ChoixActivity.class);
-		intent.putExtra("param", "plats");
+		intent.putExtra("param", "plat+principal");
 		startActivity(intent);
 	}
 	
 	public void choixDesserts(View view)
 	{
 		Intent intent = new Intent(this, ChoixActivity.class);
-		intent.putExtra("param", "desserts");
+		intent.putExtra("param", "dessert");
 		startActivity(intent);
 	}
 	
-	public void chsoixSpecialitees(View view)
+	public void choixMenu(View view)
 	{
 		Intent intent = new Intent(this, ChoixActivity.class);
-		intent.putExtra("param", "specialitees");
+		intent.putExtra("param", "Menu");
 		startActivity(intent);
+	}
+	
+	public void choixLog(View view)
+	{
+		Toast.makeText(getApplicationContext(), "À faire !", Toast.LENGTH_SHORT).show();
 	}
 
 }
