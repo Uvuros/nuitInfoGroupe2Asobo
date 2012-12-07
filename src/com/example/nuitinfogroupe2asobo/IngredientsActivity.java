@@ -17,7 +17,7 @@ public class IngredientsActivity extends Activity
 	
 	private String[] ing = new String[5];
 	
-	private static final String url = "www.spaume.org/?";
+	private static final String url = "http://nuitinfo2012.iut-valence.fr/eq2/asobo/script.php?";
 	
 	private int i;
 	

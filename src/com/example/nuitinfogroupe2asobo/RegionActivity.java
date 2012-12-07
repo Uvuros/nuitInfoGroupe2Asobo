@@ -15,7 +15,7 @@ public class RegionActivity extends Activity
 	
 	private String arg1;
 	
-	private static final String url = "www.spaume.org/?";
+	private static final String url = "http://nuitinfo2012.iut-valence.fr/eq2/asobo/script.php?";
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) 

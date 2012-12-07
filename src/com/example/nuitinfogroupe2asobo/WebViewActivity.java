@@ -5,6 +5,7 @@ import android.app.Activity;
 import android.content.Intent;
 import android.view.Menu;
 import android.webkit.WebView;
+import android.widget.Toast;
 
 public class WebViewActivity extends Activity 
 {
@@ -16,10 +17,10 @@ public class WebViewActivity extends Activity
 		setContentView(R.layout.activity_web_view);
 		
 		Intent intent = getIntent();
-	    String url = intent.getStringExtra("param0");
+	    String url = intent.getStringExtra("url");
 	    
 	    WebView mWebView = (WebView) findViewById(R.id.webView1);
-	    mWebView.loadUrl("http://www.google.com");
+	    mWebView.loadUrl(url);
 	}
 
 	@Override

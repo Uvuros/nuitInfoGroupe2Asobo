@@ -13,7 +13,7 @@ public class ChoixActivity extends Activity
 
 	private String arg0;
 	
-	private static final String url = "www.spaume.org/?";
+	private static final String url = "http://nuitinfo2012.iut-valence.fr/eq2/asobo/script.php?";
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) 
