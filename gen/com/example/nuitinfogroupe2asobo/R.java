@@ -15,7 +15,7 @@ public final class R {
     }
     public static final class id {
         public static final int RelativeLayout1=0x7f07000b;
-        public static final int TextIng=0x7f070005;
+        public static final int TextIng=0x7f070004;
         public static final int btnSpeak=0x7f070003;
         public static final int button1=0x7f070000;
         public static final int button2=0x7f070001;
@@ -25,8 +25,8 @@ public final class R {
         public static final int editText1=0x7f070009;
         public static final int menu_settings=0x7f07000e;
         public static final int textBox=0x7f070008;
-        public static final int textView1=0x7f070004;
-        public static final int textView2=0x7f070006;
+        public static final int textView1=0x7f070006;
+        public static final int textView2=0x7f070005;
         public static final int textView3=0x7f070007;
         public static final int webView1=0x7f07000a;
     }
