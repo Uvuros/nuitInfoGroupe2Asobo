@@ -26,7 +26,7 @@ public class MenuAccueil extends Activity {
 	public void choixEntrees(View view)
 	{
 		Intent intent = new Intent(this, ChoixActivity.class);
-		intent.putExtra("param", "entrees");
+		intent.putExtra("param", "entrée");
 		startActivity(intent);
 	}
 	

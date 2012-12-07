@@ -17,6 +17,8 @@ public class IngredientsActivity extends Activity
 	
 	private String[] ing = new String[5];
 	
+	private static final String url = "www.spaume.org/?";
+	
 	private int i;
 	
 	@Override
@@ -60,6 +62,12 @@ public class IngredientsActivity extends Activity
 
 	public void choixVal(View view)
 	{
-		
+		String res = "";
+		int j;
+		for(j = 0; j < this.i; j++)
+			res = res + "&ingredients" + (j+1) + "=" + this.ing[j];
+		Intent intent = new Intent(this, WebViewActivity.class);
+		intent.putExtra("url", this.url + "type=" + this.arg0 + "&choix=" + this.arg1 + res);
+		startActivity(intent);
 	}
 }

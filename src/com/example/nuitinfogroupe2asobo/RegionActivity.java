@@ -15,6 +15,8 @@ public class RegionActivity extends Activity
 	
 	private String arg1;
 	
+	private static final String url = "www.spaume.org/?";
+	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) 
 	{
@@ -41,6 +43,9 @@ public class RegionActivity extends Activity
 		else
 		{
 			String res = text.getText().toString();
+			Intent intent = new Intent(this, WebViewActivity.class);
+			intent.putExtra("url", this.url + "type=" + this.arg0 + "&choix=" + this.arg1 + "&region=" + res);
+			startActivity(intent);
 		}
 	}
 

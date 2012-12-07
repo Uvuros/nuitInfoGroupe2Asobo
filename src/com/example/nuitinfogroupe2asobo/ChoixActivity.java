@@ -12,6 +12,8 @@ public class ChoixActivity extends Activity
 {
 
 	private String arg0;
+	
+	private static final String url = "www.spaume.org/?";
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) 
@@ -34,7 +36,7 @@ public class ChoixActivity extends Activity
 	{
 		Intent intent = new Intent(this, RegionActivity.class);
 		intent.putExtra("param0", this.arg0);
-		intent.putExtra("param", "specialitees");
+		intent.putExtra("param1", "specialitees");
 		startActivity(intent);
 	}
 
@@ -42,15 +44,14 @@ public class ChoixActivity extends Activity
 	{
 		Intent intent = new Intent(this, IngredientsActivity.class);
 		intent.putExtra("param0", this.arg0);
-		intent.putExtra("param", "ingredients");
+		intent.putExtra("param1", "ingredients");
 		startActivity(intent);
 	}
 
 	public void choixRandom(View view)
 	{
-		Intent intent = new Intent(this, RegionActivity.class);
-		intent.putExtra("param0", this.arg0);
-		intent.putExtra("param", "random");
+		Intent intent = new Intent(this, WebViewActivity.class);
+		intent.putExtra("url", this.url + "type=" + this.arg0 + "&choix=random");
 		startActivity(intent);
 	}
 
