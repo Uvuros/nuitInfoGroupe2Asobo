@@ -31,7 +31,7 @@
         android:layout_alignLeft="@+id/button2"
         android:layout_below="@+id/button2"
         android:layout_marginTop="50dp"
-        android:text="Random"
+        android:text="hasard"
         android:onClick="choixRandom" />
 
         <ImageButton
